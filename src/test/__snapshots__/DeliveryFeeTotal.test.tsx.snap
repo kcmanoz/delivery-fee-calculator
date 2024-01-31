@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeliveryFeeTotal renders with default props 1`] = `
+<div>
+  <div
+    class="result-container"
+    data-test-id="fee"
+  >
+    <h3>
+      Delivery Price: 
+      0
+       €
+    </h3>
+  </div>
+</div>
+`;

@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders with default props 1`] = `
+<div>
+  <div
+    class="calculator-container"
+  >
+    <div
+      class="calculator-form"
+    >
+      <h3
+        class="calculator-title"
+      >
+        Delivery Fee Calculator
+      </h3>
+      <form
+        class="form-container"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="cartValue"
+          >
+            Cart Value
+          </label>
+          <input
+            class="form-input"
+            data-test-id="cartValue"
+            name="cartValue"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="distance"
+          >
+            Delivery Distance
+          </label>
+          <input
+            class="form-input"
+            data-test-id="deliveryDistance"
+            min="1"
+            name="distance"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="amount"
+          >
+            Number Of Items
+          </label>
+          <input
+            class="form-input"
+            data-test-id="numberOfItems"
+            min="1"
+            name="amount"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="date"
+          >
+            Time
+          </label>
+          <input
+            class="form-input"
+            data-test-id="orderTime"
+            name="date"
+            type="datetime-local"
+          />
+        </div>
+        <button
+          class="calculate-button"
+          data-test-id="calculateButton"
+          type="submit"
+        >
+          Calculate Delivery Price
+        </button>
+      </form>
+      <div
+        class="result-container"
+        data-test-id="fee"
+      >
+        <h3>
+          Delivery Price: 
+           €
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App renders without crashing 1`] = `
+<div>
+  <div
+    class="calculator-container"
+  >
+    <div
+      class="calculator-form"
+    >
+      <h3
+        class="calculator-title"
+      >
+        Delivery Fee Calculator
+      </h3>
+      <form
+        class="form-container"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="cartValue"
+          >
+            Cart Value
+          </label>
+          <input
+            class="form-input"
+            data-test-id="cartValue"
+            name="cartValue"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="distance"
+          >
+            Delivery Distance
+          </label>
+          <input
+            class="form-input"
+            data-test-id="deliveryDistance"
+            min="1"
+            name="distance"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="amount"
+          >
+            Number Of Items
+          </label>
+          <input
+            class="form-input"
+            data-test-id="numberOfItems"
+            min="1"
+            name="amount"
+            type="number"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="date"
+          >
+            Time
+          </label>
+          <input
+            class="form-input"
+            data-test-id="orderTime"
+            name="date"
+            type="datetime-local"
+          />
+        </div>
+        <button
+          class="calculate-button"
+          data-test-id="calculateButton"
+          type="submit"
+        >
+          Calculate Delivery Price
+        </button>
+      </form>
+      <div
+        class="result-container"
+        data-test-id="fee"
+      >
+        <h3>
+          Delivery Price: 
+           €
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;

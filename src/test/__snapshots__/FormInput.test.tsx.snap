@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput renders with default props 1`] = `
+<div>
+  <form
+    class="form-container"
+  >
+    <div
+      class="form-group"
+    >
+      <label
+        class="form-label"
+        for="cartValue"
+      >
+        Cart Value
+      </label>
+      <input
+        class="form-input"
+        data-test-id="cartValue"
+        name="cartValue"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        class="form-label"
+        for="distance"
+      >
+        Delivery Distance
+      </label>
+      <input
+        class="form-input"
+        data-test-id="deliveryDistance"
+        min="1"
+        name="distance"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        class="form-label"
+        for="amount"
+      >
+        Number Of Items
+      </label>
+      <input
+        class="form-input"
+        data-test-id="numberOfItems"
+        min="1"
+        name="amount"
+        type="number"
+      />
+    </div>
+    <div
+      class="form-group"
+    >
+      <label
+        class="form-label"
+        for="date"
+      >
+        Time
+      </label>
+      <input
+        class="form-input"
+        data-test-id="orderTime"
+        name="date"
+        type="datetime-local"
+      />
+    </div>
+    <button
+      class="calculate-button"
+      data-test-id="calculateButton"
+      type="submit"
+    >
+      Calculate Delivery Price
+    </button>
+  </form>
+</div>
+`;

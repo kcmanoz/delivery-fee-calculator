@@ -6,24 +6,17 @@ import DeliveryFeeCalculator, {
 } from "./Components/DeliveryFeeCalculator";
 
 const App: React.FC = () => {
-  const [deliveryFee, setDeliveryFee] = useState<any>(0);
+  const [deliveryFee, setDeliveryFee] = useState<any>();
 
-  const DeliveryFee = (data: DeliveryFeeCalculatorProps) => {
-    const { cartValue, distance, amount, date } = data;
-    const calculatedFee = DeliveryFeeCalculator({
-      cartValue,
-      distance,
-      amount,
-      date,
-    });
-    setDeliveryFee(calculatedFee);
+  const handleDeliveryFee = (data: DeliveryFeeCalculatorProps) => {
+    setDeliveryFee(DeliveryFeeCalculator(data));
   };
 
   return (
     <div className="calculator-container">
       <div className="calculator-form">
         <h3 className="calculator-title">Delivery Fee Calculator</h3>
-        <Form onSubmit={DeliveryFee} />
+        <Form onSubmit={handleDeliveryFee} />
         <DeliveryFeeTotal deliveryFee={deliveryFee} />
       </div>
     </div>

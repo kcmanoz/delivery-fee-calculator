@@ -88,15 +88,6 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
         <input
           {...register("date", {
             required: "Date & Time is required",
-            validate: (value) => {
-              const selectedDate = new Date(value);
-              const currentDate = new Date();
-
-              return (
-                selectedDate > currentDate ||
-                "Please select a valid date and time!"
-              );
-            },
           })}
           className="form-input"
           type="datetime-local"

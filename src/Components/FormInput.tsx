@@ -13,17 +13,7 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
   } = useForm<FormData>();
 
   const handleFormSubmit = (data: FormData) => {
-    const validatedData = validateInputs(data);
-    if (validatedData) {
-      onSubmit(validatedData);
-    }
-  };
-
-  const validateInputs = (data: FormData): FormData | null => {
-    if (!data.cartValue || !data.distance || !data.amount || !data.date) {
-      return null;
-    }
-    return data;
+    onSubmit(data);
   };
 
   return (
@@ -44,11 +34,10 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
           name="cartValue"
           data-test-id="cartValue"
         />
-
-        {errors.cartValue && (
-          <p className="error-message">{errors.cartValue.message}</p>
-        )}
       </div>
+      {errors.cartValue && (
+        <p className="error-message">{errors.cartValue.message}</p>
+      )}
 
       <div className="form-group">
         <label className="form-label" htmlFor="distance">
@@ -67,10 +56,10 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
           name="distance"
           data-test-id="deliveryDistance"
         />
-        {errors.distance && (
-          <p className="error-message">{errors.distance.message}</p>
-        )}
       </div>
+      {errors.distance && (
+        <p className="error-message">{errors.distance.message}</p>
+      )}
       <div className="form-group">
         <label className="form-label" htmlFor="amount">
           Number Of Items
@@ -88,10 +77,10 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
           name="amount"
           data-test-id="numberOfItems"
         />
-        {errors.amount && (
-          <p className="error-message">{errors.amount.message}</p>
-        )}
       </div>
+      {errors.amount && (
+        <p className="error-message">{errors.amount.message}</p>
+      )}
       <div className="form-group">
         <label className="form-label" htmlFor="date">
           Time
@@ -114,8 +103,8 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
           name="date"
           data-test-id="orderTime"
         />
-        {errors.date && <p className="error-message">{errors.date.message}</p>}
       </div>
+      {errors.date && <p className="error-message">{errors.date.message}</p>}
       <button
         type="submit"
         className="calculate-button"

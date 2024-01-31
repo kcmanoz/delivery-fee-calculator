@@ -20,18 +20,18 @@ body {
 
 .calculator-form {
   background-color: #00c2e8;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
+  padding: 1.25rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.8rem #ccc;
   width: 80vw;
-  max-width: 600px;
+  max-width: 40rem;
   text-align: start;
 }
 
 .calculator-title {
-  margin: 0 0 30px;
-  font-size: 32px;
-  padding: 5px;
+  margin: 0 0 2rem;
+  font-size: 2rem;
+  padding: 0.5rem;
   color: white;
 }
 
@@ -44,35 +44,35 @@ body {
 .form-group {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 100%;
 }
 
 .form-label {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 10px 0 5px;
+  margin: 0.8rem 0 0.5rem;
   text-align: left;
   width: 100%;
 }
 
 .form-input {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 100%;
 }
 
 button[type="submit"] {
-  background-color: #3498db;
+  background-color: #0a8de3;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.8rem 1.25rem;
+  border-radius: 0.5rem;
   border: none;
-  font-size: 22px;
+  font-size: 1.5rem;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 button[type="submit"]:hover {
@@ -80,29 +80,38 @@ button[type="submit"]:hover {
 }
 
 .result-container {
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .error-message {
-  color: #ff0000;
-  font-size: 16px;
+  color: #de4040;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: -1rem 0 1rem 19rem;
+  align-self: flex-start;
 }
 
 @media (max-width: 768px) {
   .calculator-container {
-    width: 320px;
+    width: auto;
+    margin: auto;
   }
 
   .calculator-form {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
   }
 
   .calculate-button {
-    width: 100%;
+    width: 80%;
   }
 
   .result-container {
     margin-top: 0;
+  }
+
+  .error-message {
+    align-self: flex-end;
   }
 }

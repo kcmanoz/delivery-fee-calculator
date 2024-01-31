@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
-import { FormData } from "../App";
+import { DeliveryFeeCalculatorProps } from "./DeliveryFeeCalculator";
 
 interface FormProps {
-  onSubmit: (data: FormData) => void;
+  onSubmit: (data: DeliveryFeeCalculatorProps) => void;
 }
 
 const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
@@ -10,9 +10,9 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormData>();
+  } = useForm<DeliveryFeeCalculatorProps>();
 
-  const handleFormSubmit = (data: FormData) => {
+  const handleFormSubmit = (data: DeliveryFeeCalculatorProps) => {
     onSubmit(data);
   };
 

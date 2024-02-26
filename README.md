@@ -21,7 +21,10 @@ Rules for calculating a delivery fee
 - The delivery is free (0€) when the cart value is equal or more than 200€.
   
 
-## View live at: https://delivery-fee-calculator-page.vercel.app
+## View live at:
+https://delivery-fee-calculator-page.vercel.app
+
+
 
 
 # Getting Started with Create React App

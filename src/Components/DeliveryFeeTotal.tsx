@@ -9,5 +9,4 @@ const DeliveryFeeTotal: React.FC<DeliveryFeeTotalProps> = ({ deliveryFee }) => {
     </div>
   );
 };
-
 export default DeliveryFeeTotal;

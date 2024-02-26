@@ -20,6 +20,7 @@ Rules for calculating a delivery fee
 - The delivery fee can **never** be more than 15€, including possible surcharges.
 - The delivery is free (0€) when the cart value is equal or more than 200€.
 
+### View live at: https://delivery-fee-calculator-page.vercel.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

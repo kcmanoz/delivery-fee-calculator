@@ -1,6 +1,6 @@
 # Delivery Fee Calculator
 
-The Delivery Fee Calculator web application was a part of Wolt internship pre-assignment which I built using React, TypeScript and CSS. The application calculates the delivery fee for a given order based on the cart value, delivery distance, the amount of items ordered and day and time. The calculator applies specific rules to determine the final delivery fee, including surcharges and bulk fees. Additionally, it takes into account the Friday rush period during which the delivery fee may be affected.
+This Delivery Fee Calculator web application was a part of Wolt internship pre-assignment which I built using React, TypeScript and CSS. The application calculates the delivery fee for a given order based on the cart value, delivery distance, the amount of items ordered and day and time. The calculator applies specific rules to determine the final delivery fee, including surcharges and bulk fees. Additionally, it takes into account the Friday rush period during which the delivery fee may be affected.
 
 ### Specification
 

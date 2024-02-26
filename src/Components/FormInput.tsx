@@ -110,4 +110,5 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
     </form>
   );
 };
+
 export default FormInput;

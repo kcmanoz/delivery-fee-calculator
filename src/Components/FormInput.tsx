@@ -20,7 +20,7 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
     <form className="form-container" onSubmit={handleSubmit(handleFormSubmit)}>
       <div className="form-group">
         <label className="form-label" htmlFor="cartValue">
-          Cart Value
+          Cart Value (€)
         </label>
         <input
           {...register("cartValue", {
@@ -41,7 +41,7 @@ const FormInput: React.FC<FormProps> = ({ onSubmit }) => {
 
       <div className="form-group">
         <label className="form-label" htmlFor="distance">
-          Delivery Distance
+          Delivery Distance (Km)
         </label>
         <input
           {...register("distance", {
